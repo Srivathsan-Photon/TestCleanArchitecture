@@ -8,6 +8,6 @@ interface GeocodingService {
 
     @GET("v1/search")
     suspend fun getGeocoding(
-        @Query("name") name:String
+        @Query("name") name: String
     ): GeocodingDto
 }
