@@ -17,10 +17,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.myapplication.domain.usecase.Resource
 import com.example.myapplication.ui.viewmodel.WeatherViewModel
+import com.example.testCleanArchitecture.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -34,7 +36,7 @@ fun WeatherScreen(
 
     Scaffold(
         topBar = {
-            TopAppBar(title = { Text("Weather") })
+            TopAppBar(title = { Text(stringResource(R.string.app_name)) })
         }
     ) { padding ->
         Column(

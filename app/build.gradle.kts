@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.myapplication"
+    namespace = "com.example.testCleanArchitecture"
     compileSdk = 37
 
     defaultConfig {
-        applicationId = "com.example.myapplication"
+        applicationId = "com.example.testCleanArchitecture"
         minSdk = 24
         targetSdk = 37
         versionCode = 1
